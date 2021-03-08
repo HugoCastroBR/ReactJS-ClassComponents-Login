@@ -1,0 +1,17 @@
+.User-item{
+    width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.User-name,.User-email{
+    margin-left: 5px;
+    color: white;
+}
+
+.User-item-selected{
+    background-color: gray;
+}
