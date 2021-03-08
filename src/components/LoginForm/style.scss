@@ -5,7 +5,6 @@
     height: 600px;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     background-color: rgb(90, 90, 93);
     border-radius: 5px;
     margin-left: 30px;
@@ -36,6 +35,21 @@
     background-color: transparent;
     cursor: pointer;
     color: white;
+    transition: 0.5s;
+}
+
+.Login-Form_send:active{
+    transition: 0.5s;
+    border: 1px solid rgb(90, 90, 93);
+    color: rgb(90, 90, 93);
+    background-color: white;
+}
+
+.Login-Form_send:hover{
+    transition: 1s;
+    border: 1px solid rgb(90, 90, 93);
+    color: rgb(90, 90, 93);
+    background-color: white;
 }
 
 .Login-error-msg{
@@ -49,4 +63,14 @@
 
 .error-error{
     color: red;
+}
+
+@media screen and (max-width: 500px){
+    .Login-Form{
+        width: 100vw;
+        margin: 0px;
+    }
+    .Login-Form_name,.Login-Form_password{
+        width: 280px;
+    }
 }

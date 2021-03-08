@@ -72,6 +72,7 @@ class App extends Component {
 	}
 
 	create_user(name,email,password){
+		this.limparErros()
 		const selected = false
 		
 		let exist = false
@@ -116,7 +117,8 @@ class App extends Component {
 
     render() {
         return (
-            <section className="Section_main">
+            <main className="main-container">
+				<section className="Section_main">
                 <LoginForm login={this.login.bind(this)}
 				Login_error={this.state.Login_error}
 				Login_status={this.state.Login_status}
@@ -127,8 +129,13 @@ class App extends Component {
 				Cadastro_error={this.state.Cadastro_error}
 				Cadastro_status={this.state.Cadastro_status}
 				/>
-                <ListaUsers users={this.state.users}/>
+                
             </section>
+					<div className="Lista-container">
+						<h3 className="Listh3">Lista de usuarios:</h3>
+						<ListaUsers users={this.state.users}/>
+					</div>
+			</main>
         );
     }
 }

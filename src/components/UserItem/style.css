@@ -1,6 +1,6 @@
 .User-item {
-  width: 400px;
-  height: 50px;
+  width: 600px;
+  height: 60px;
   border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,14 +11,36 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .User-name, .User-email {
+  font-size: 16px;
   margin-left: 5px;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.User-name::before {
+  content: "Name: ";
+}
+
+.User-email::before {
+  content: "Email: ";
 }
 
 .User-item-selected {
-  background-color: gray;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  background-color: white;
+  color: #5a5a5d;
+}
+
+.User-item-selected span {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  color: #5a5a5d;
 }
 /*# sourceMappingURL=style.css.map */

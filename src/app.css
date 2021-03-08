@@ -1,3 +1,24 @@
+@import url(c:\Users\hugoe\Desktop\Projetos\Aqui\Alura\JS\React_login\loger\src\assets\css\reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+.main-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1C1D1E;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .Section_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,5 +27,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5, h6, a, span, p, button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Lista-container {
+  margin-top: 100px;
+  width: calc(100vw - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Listh3 {
+  margin-left: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .Section_main {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=app.css.map */

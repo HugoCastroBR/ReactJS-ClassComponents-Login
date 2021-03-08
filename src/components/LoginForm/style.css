@@ -13,7 +13,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
   background-color: #5a5a5d;
   border-radius: 5px;
   margin-left: 30px;
@@ -44,6 +43,24 @@
   background-color: transparent;
   cursor: pointer;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Login-Form_send:active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #5a5a5d;
+  color: #5a5a5d;
+  background-color: white;
+}
+
+.Login-Form_send:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 1px solid #5a5a5d;
+  color: #5a5a5d;
+  background-color: white;
 }
 
 .Login-error-msg {
@@ -57,5 +74,15 @@
 
 .error-error {
   color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .Login-Form {
+    width: 100vw;
+    margin: 0px;
+  }
+  .Login-Form_name, .Login-Form_password {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
